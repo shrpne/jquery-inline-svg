@@ -1,0 +1,26 @@
+{
+  "name": "jquery-inline-svg",
+  "version": "1.0.0",
+  "description": "Replace SVG images with inline SVG element ",
+  "keywords": [
+    "svg",
+    "inline",
+    "jquery"
+  ],
+  "author": "shrpne <shrpne@gmail.com>",
+  "license": "MIT",
+  "repository": "shrpne/jquery-inline-svg",
+  "bugs": {
+    "url": "https://github.com/shrpne/jquery-inline-svg/issues"
+  },
+  "homepage": "https://github.com/shrpne/jquery-inline-svg",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^4",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.9.0"
+  },
+  "scripts": {
+    "test": "eslint src/*.js"
+  }
+}
