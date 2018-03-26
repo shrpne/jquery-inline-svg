@@ -1,6 +1,6 @@
 {
   "name": "jquery-inline-svg",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Replace SVG images with inline SVG element",
   "main": "dist/jquery-inline-svg.esm.js",
   "scripts": {
