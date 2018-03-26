@@ -1,12 +1,14 @@
+"use strict";
+
+
+const cache = {};
+
 (function wrapJquery($) {
     $.fn.inlineSvg = function fnInlineSvg() {
         this.each(imgToSvg);
 
         return this;
     };
-
-
-    const cache = {};
 
     function imgToSvg() {
         const $img = $(this);
