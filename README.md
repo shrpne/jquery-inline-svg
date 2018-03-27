@@ -14,41 +14,45 @@ npm install jquery-inline-svg
 
 ### Manually
 
-Download the [dist/jquery-inline-svg.min.js](https://github.com/shrpne/jquery-inline-svg/blob/master/dist/svg-injector.min.js) file from this repository and add it to your project.
+Download the [dist/jquery-inline-svg.min.js](https://unpkg.com/jquery-inline-svg@latest/dist/jquery-inline-svg.min.js) and add it to your project.
 
 
 
 ## Usage
 
-Include the `jquery-inline-svg` script on your page after `jQuery`.
-
 ```html
-<script src="jquery.min.js"></script>
-<script src="jquery-inline-svg.min.js"></script>
-```
-
-Add some SVG `<img>` tags.
-
-```html
+<!-- Add some SVG `<img>` tags. -->
 <img src="image-one.svg" data-inline-svg>
 <img src="image-two.svg" data-inline-svg>
-```
 
-Inline them.
+<!-- Include the `jquery-inline-svg` script on your page after `jQuery`. -->
+<script src="jquery.min.js"></script>
+<script src="jquery-inline-svg.min.js"></script>
 
-```html
+<!-- Inline images. -->
 <script>
   $('[data-inline-svg]').inlineSvg();
 </script>
+
+<!-- The `<img>` tags have now been replaced with the full SVG markup. -->
 ```
 
-The `<img>` tags have now been replaced with the full SVG markup.
+Or with ES2015 modules
+
+```js
+import $ from 'jquery';
+import 'jquery-inline-svg';
+
+$('[data-inline-svg]').inlineSvg();
+```
+
 
 ### Events
 `svgInlined` event will be fired on every `<img>` with inlined SVG element as argument
 ```js
 $('[data-inline-svg]').on('svgInlined', function (e, svgElement) {
-    $(svgElement).addClass('is-loaded');
+    const $originalImage = $(this); // <-- original <img> will be removed from the DOM when this event handler function finished
+    const $inlinedSvgElement = $(svgElement).addClass('is-loaded');
 })
 ```
 
@@ -57,7 +61,7 @@ $('[data-inline-svg]').on('svgInlined', function (e, svgElement) {
 This plugin requires jQuery 3
 
 ## Reference
-inlineSvg from UIkit 2 https://github.com/uikit/uikit/blob/v2/master/src/js/core/utility.js#L267
+Inspired by inlineSvg from UIkit 2 https://github.com/uikit/uikit/blob/v2/master/src/js/core/utility.js#L267
 
 
 
