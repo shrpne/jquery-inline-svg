@@ -1,6 +1,6 @@
 # jQuery Inline SVG [![Build Status][ci-img]][ci]
 
-Takes an <img> with an SVG as its source and replace it with an inline <svg> so you can manipulate the style of it with CSS/JS etc.
+Takes an `<img>` with an SVG as its source and replace it with an inline `<svg>` so you can manipulate the style of it with CSS/JS etc.
 
 [ci-img]:  https://travis-ci.org/shrpne/jquery-inline-svg.svg
 [ci]:      https://travis-ci.org/shrpne/jquery-inline-svg
