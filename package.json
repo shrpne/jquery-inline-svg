@@ -1,13 +1,16 @@
 {
   "name": "jquery-inline-svg",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Replace SVG images with inline SVG element",
-  "main": "dist/jquery-inline-svg.esm.js",
+  "main": "dist/jquery-inline-svg.js",
+  "module": "src/index.js",
+  "unpkg": "dist/jquery-inline-svg.min.js",
   "scripts": {
     "test": "eslint src/*.js",
     "build": "npm run bundle && npm run bundle:min",
     "bundle": "rollup -c build/rollup.conf.js",
-    "bundle:min": "rollup -c build/rollup-min.conf.js"
+    "bundle:min": "rollup -c build/rollup-min.conf.js",
+    "prepublishOnly": "npm run build"
   },
   "keywords": [
     "svg",

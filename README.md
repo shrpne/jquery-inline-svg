@@ -1,4 +1,8 @@
-# jQuery Inline SVG [![Build Status][ci-img]][ci]
+# jQuery Inline SVG
+
+[![NPM Package](https://img.shields.io/npm/v/jquery-inline-svg.svg?style=flat-square)](https://www.npmjs.org/package/jquery-inline-svg)
+[![Minified Size](https://img.shields.io/bundlephobia/min/jquery-inline-svg.svg?style=flat-square)](https://bundlephobia.com/result?p=jquery-inline-svg)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://github.com/shrpne/jquery-inline-svg/blob/master/LICENSE)
 
 Takes an `<img>` with an SVG as its source and replace it with an inline `<svg>` so you can manipulate the style of it with CSS/JS etc.
 
