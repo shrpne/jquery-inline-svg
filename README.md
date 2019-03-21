@@ -9,6 +9,11 @@ Takes an `<img>` with an SVG as its source and replace it with an inline `<svg>`
 [ci-img]:  https://travis-ci.org/shrpne/jquery-inline-svg.svg
 [ci]:      https://travis-ci.org/shrpne/jquery-inline-svg
 
+Other frameworks alternatives:
+
+- Vue: [vue-inline-svg](https://github.com/shrpne/vue-inline-svg)
+- Vanilla: [inline-svg](https://github.com/jonnyhaynes/inline-svg)
+
 ## Install
 
 ### npm
@@ -16,7 +21,7 @@ Takes an `<img>` with an SVG as its source and replace it with an inline `<svg>`
 npm install jquery-inline-svg
 ```
 
-### Manually
+### cdn
 
 Download the [dist/jquery-inline-svg.min.js](https://unpkg.com/jquery-inline-svg@latest/dist/jquery-inline-svg.min.js) and add it to your project.
 
